@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="tipCalculator">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Welcome to Tip Calculator</title>
+    <!-- 
+        project-name: Tip Calculator for Restaurants
+        author: Sandarbh Tiwari
+        date-created: 28/06/2020
+    -->
+</head>
+<body>
+    <main>
+        <!-- <div class=""></div> -->
+        <h1 class="text-white">Welcome to Tip Calculator</h1>
+        <div class="inputSection">
+            <!-- for having inputs and labels -->
+            <label>Bill Amount</label>
+            <input type="text" id="billAmt">
+            <br>
+            <label>Tip %</label>
+            <input type="text" id="tipPercent">
+            <br>
+            <label>Tip Amount</label>
+            <input type="text" id="tipAmt">
+            <br>
+            <label>Total Bill</label>
+            <input type="text" id="billTotal">
+            <br>
+            <button class="btnCalc" onclick='findTip()'>Calculate Tip</button>
+        </div>
+    </main>
+    <script>
+        function findTip () {
+            var amt = document.getElementById('billAmt').value;
+            var tipPer = document.getElementById('tipPercent').value;
+            var tipVal = amt*(tipPer/100);
+            // alert("Your tip amount is: "+tipVal);
+            var billTotalAmount = tipVal + Number(amt);
+            // alert("Your total bill amount is: "+billTotalAmount);
+            document.getElementById('tipAmt').value = tipVal;
+            document.getElementById('billTotal').value = billTotalAmount;
+        }
+    </script>
+</body>
+</html>

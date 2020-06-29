@@ -1,0 +1,61 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+body{
+    background: #EB3349; 
+    background: -webkit-linear-gradient(to right, #F45C43, #EB3349); 
+    background: linear-gradient(to right, #F45C43, #EB3349);
+}
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}
+main h1{
+    margin-bottom: 15px;
+    text-shadow: 1px 1px 2px black;
+    color: white;
+    text-transform: capitalize;
+}
+.inputSection{
+    max-width: 500px;
+    height: auto;
+    background-color: #00cec9;
+    padding: 50px;
+    box-shadow: 2px 2px 10px 2px gainsboro;
+}
+/* #55efc4 */
+.inputSection label{
+    color: white;
+    font-size: 24px;
+    display: block;
+    margin-top: 15px; 
+}
+.inputSection input{
+    width: 400px;
+    padding: 8px;
+    border: 1px solid #F45C43;
+    border-radius: 3px;
+    color: #EB3349;
+    font-weight: bold;
+}
+.inputSection input:hover{
+    cursor: pointer;
+}
+.btnCalc{
+    margin-top: 15px;
+    padding: 10px;
+    font-size: 24px;
+    color: white;
+    background-image: linear-gradient(to top right, #F45C43, #EB3349);
+    border: none;
+    border-radius: 3px;
+}
+.btnCalc:hover{
+    cursor: pointer;
+}
